@@ -1,0 +1,23 @@
+{
+  "name": "commitreminder",
+  "displayName": "Commit Reminder",
+  "description": "Reminds you to commit every time you save a file.",
+  "version": "0.0.1",
+  "publisher": "your-publisher-name",
+  "engines": {
+    "vscode": "^1.75.0"
+  },
+  "activationEvents": [
+    "onCommand:commit.reminder",       
+    "onDidSaveTextDocument"         
+  ],
+  "main": "./out/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "commit.reminder",
+        "title": "Commit Reminder"
+      }
+    ]
+  }
+}
